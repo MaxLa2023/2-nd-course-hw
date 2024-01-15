@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header center">
+        <h1 class="header__title">Добро пожаловать на мой сайт !</h1>
+        <p class="header__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span
+                class="header__text_bold">поехали</span> и <span class="header__text_bold">приступай</span>
+        </p>
+        <button type="submit" class="header__button">Поехали!</button>
+    </div>
+
+    <div class="games center">
+        <a href="#">
+            <div class="games__item_game games__item_game01">
+                <div class="games__item_text">Игра 1</div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="games__item_game games__item_game02">
+                <div class="games__item_text">Игра 2</div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="games__item_game games__item_game03">
+                <div class="games__item_text">Игра 3</div>
+            </div>
+        </a>
+    </div>
+
+    <div class="seasons center">
+        <div class="seasons__info">
+            <h1 class="seasons__info_title">Времена года!</h1>
+            <p class="seasons__info_text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому
+                времени года он относится
+            </p>
+            
+            <button type="submit" class="seasons__info_button" onclick="playSeasons()">Играть!</button>
+        </div>
+
+        <img class="seasons__icon" src="img/undraw_video_game_night.svg" alt="game">
+
+    </div>
+
+<!-- Мини-игра на джаваскрипте -->
+    <script src="index.js"></script>
+</body>
+
+</html>
