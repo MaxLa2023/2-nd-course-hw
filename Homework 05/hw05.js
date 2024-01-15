@@ -64,9 +64,6 @@ function less(a, b) {
     if (a > b) {
         return b;
     }
-    else if (a === b) {
-        return a;
-    }
     else {
         return a;
     }
@@ -74,10 +71,17 @@ function less(a, b) {
 
 less(1, 2)
 
+// или
+// function result(a, b) {
+//     return Math.min(a, b)
+// }
+
+// console.log(result(6, 3));
+
+
 // Задание 02
 function evenOdd(num) {
     let userNum = Number(prompt('Введите число, чтобы проверить, четное оно или нет'));
-    userNum === num
 
     if (userNum % 2 === 0) {
         return 'Число четное';
@@ -97,6 +101,18 @@ function returnSquare(a) {
 function square(b) {
     console.log(b ** 2);
 }
+
+// или
+
+// function  squareNumber(num, square) { 
+
+//     console.log(Math.pow(num, square)); /// где num это наше передаваемое число, а square это степень которая нам нужна.
+
+//     return Math.pow(num, square);
+// }
+
+// squareNumber(5, 2)
+
 
 // Задание 04
 "use strict";
@@ -119,6 +135,24 @@ if (age < 12 && age >= 0) {
         console.log("Добро пожаловать!");
     }
 }
+
+// или
+// function greetUser() {
+
+//     let age = prompt("Сколько вам лет?");  
+
+//     if (age < 0) { 
+//       console.log("Вы ввели неправильное значение");
+
+//     } else if (age <= 12) { 
+//       console.log("Привет, друг!");
+
+//     } else {
+//       console.log("Добро пожаловать!");
+//     }
+//   }
+
+
 
 printMessage();
 
