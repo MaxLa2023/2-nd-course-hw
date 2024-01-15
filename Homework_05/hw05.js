@@ -59,7 +59,7 @@
 
 
 
-// Задание 01
+// Задание 01 Нахождение меньшего числа
 function less(a, b) {
     if (a > b) {
         return b;
@@ -68,8 +68,8 @@ function less(a, b) {
         return a;
     }
 }
-
 less(1, 2)
+
 
 // или
 // function result(a, b) {
@@ -79,7 +79,14 @@ less(1, 2)
 // console.log(result(6, 3));
 
 
-// Задание 02
+// или тернарный оператор
+
+function less(a1, b1) {
+    return (a1 < b1) ? a1 : b1;
+}
+
+
+// Задание 02 Четное число
 function evenOdd(num) {
     let userNum = Number(prompt('Введите число, чтобы проверить, четное оно или нет'));
 
@@ -90,10 +97,16 @@ function evenOdd(num) {
         return 'Число нечетное';
     }
 }
-
 evenOdd(num);
 
-// Задание 03
+
+// function eo(x) {
+//     return (x % 2 === 0) ? 'Число четное' : 'Число нечетное';
+// }
+
+// eo(x);
+
+// Задание 03 степень
 function returnSquare(a) {
     return a ** 2;
 }
@@ -156,7 +169,7 @@ if (age < 12 && age >= 0) {
 
 printMessage();
 
-// Задание 05
+// Задание 05 Один из параметров не число
 function mult(num1, num2) {
     if (isNaN(num1) || isNaN(num2)) {
         return 'Одно или оба значения не являются числом';
@@ -165,7 +178,7 @@ function mult(num1, num2) {
     }
 }
 
-// Задание 06
+// Задание 06 Введение в куб
 function cube() {
     let num3 = Number(prompt('Введите число, которое нужно возвести в куб'))
 
