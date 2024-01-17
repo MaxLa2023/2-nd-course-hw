@@ -37,7 +37,7 @@ if (d > 100 || e > 100) {
 // Задание 04
 let a = '2';
 let b = '3';
-alert(parseInt(a) + parseInt(b));
+console.log(parseInt(a) + parseInt(b));
 
 // Задание 05
 let monthNumber = Number(prompt("Введите номер месяца"));

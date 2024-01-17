@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+    .center {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .header {
+        max-width: 768px;
+        text-align: center;
+
+
+    }
+
+    .games {
+        flex-wrap: wrap;
+        row-gap: 32px;
+        padding-bottom: 128px;
+
+
+    }
+
+
+
+
+}

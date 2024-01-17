@@ -1,16 +1,16 @@
 // Задание 01
 let a = 10;
-alert(a);
+console.log(a);
 a = 20;
-alert(a);
+console.log(a);
 
 // Задание 02
 const firstIphoneYear = Number(2007);
-alert(`Год выпуска первого айфона - ${firstIphoneYear}`);
+console.log(`Год выпуска первого айфона - ${firstIphoneYear}`);
 
 // Задание 03
 const javaScriptCreator = 'Брендан Эйк';
-alert(`Этот парень создал Джаваскрипт -  ${javaScriptCreator}`);
+console.log(`Этот парень создал Джаваскрипт -  ${javaScriptCreator}`);
 
 // Задание 04
 let n1 = 10, n2 = 2;
@@ -19,17 +19,17 @@ let dif = n1 - n2;
 let prod = n1 * n2;
 let quot = n1 / n2;
 
-alert(`Сумма: ${sum}, Разность: ${dif}, Произведение: ${prod}, Частное: ${quot}`);
+console.log(`Сумма: ${sum}, Разность: ${dif}, Произведение: ${prod}, Частное: ${quot}`);
 
 // Задание 05
 let result = 2 ** 5;
-alert(`Два в пятой степени = ${result}`);
+console.log(`Два в пятой степени = ${result}`);
 
 // Задание 06
 let a1 = 9;
 let b1 = 2;
 let reminder = a1 % b1;
-alert("Остаток от деления девяти на два = " + reminder);
+console.log("Остаток от деления девяти на два = " + reminder);
 
 // Задание 07
 let num = 1;
@@ -39,11 +39,11 @@ num *= 7;
 num /= 3;
 num += 1;
 num -= 1;
-alert(num);
+console.log(num);
 
 // Задание 08
 let age = Number(prompt('Сколько вам лет?'));
-alert(`Вам ${age} лет/года`);
+console.log(`Вам ${age} лет/года`);
 
 // Задание 09
 // const user = {
@@ -69,10 +69,10 @@ let info = prompt('Какую информацию хотите узнать о 
 
 // Тут что-то не работает, непонятно
 let userInfo = user[info];
-alert(userInfo);
+console.log(userInfo);
 
 // Задание 10
 let userName = String(prompt('Введите ваше имя'));
-alert(`Привет, ${userName}!`);
+console.log(`Привет, ${userName}!`);
 
 
