@@ -59,25 +59,36 @@
 
 
 
-// Задание 01
+// Задание 01 Нахождение меньшего числа
 function less(a, b) {
     if (a > b) {
         return b;
-    }
-    else if (a === b) {
-        return a;
     }
     else {
         return a;
     }
 }
-
 less(1, 2)
 
-// Задание 02
+
+// или
+// function result(a, b) {
+//     return Math.min(a, b)
+// }
+
+// console.log(result(6, 3));
+
+
+// или тернарный оператор
+
+function less(a1, b1) {
+    return (a1 < b1) ? a1 : b1;
+}
+
+
+// Задание 02 Четное число
 function evenOdd(num) {
     let userNum = Number(prompt('Введите число, чтобы проверить, четное оно или нет'));
-    userNum === num
 
     if (userNum % 2 === 0) {
         return 'Число четное';
@@ -86,10 +97,16 @@ function evenOdd(num) {
         return 'Число нечетное';
     }
 }
-
 evenOdd(num);
 
-// Задание 03
+
+// function eo(x) {
+//     return (x % 2 === 0) ? 'Число четное' : 'Число нечетное';
+// }
+
+// eo(x);
+
+// Задание 03 степень
 function returnSquare(a) {
     return a ** 2;
 }
@@ -97,6 +114,18 @@ function returnSquare(a) {
 function square(b) {
     console.log(b ** 2);
 }
+
+// или
+
+// function  squareNumber(num, square) { 
+
+//     console.log(Math.pow(num, square)); /// где num это наше передаваемое число, а square это степень которая нам нужна.
+
+//     return Math.pow(num, square);
+// }
+
+// squareNumber(5, 2)
+
 
 // Задание 04
 "use strict";
@@ -120,9 +149,27 @@ if (age < 12 && age >= 0) {
     }
 }
 
+// или
+// function greetUser() {
+
+//     let age = prompt("Сколько вам лет?");  
+
+//     if (age < 0) { 
+//       console.log("Вы ввели неправильное значение");
+
+//     } else if (age <= 12) { 
+//       console.log("Привет, друг!");
+
+//     } else {
+//       console.log("Добро пожаловать!");
+//     }
+//   }
+
+
+
 printMessage();
 
-// Задание 05
+// Задание 05 Один из параметров не число
 function mult(num1, num2) {
     if (isNaN(num1) || isNaN(num2)) {
         return 'Одно или оба значения не являются числом';
@@ -131,7 +178,7 @@ function mult(num1, num2) {
     }
 }
 
-// Задание 06
+// Задание 06 Введение в куб
 function cube() {
     let num3 = Number(prompt('Введите число, которое нужно возвести в куб'))
 
