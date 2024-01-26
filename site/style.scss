@@ -175,6 +175,60 @@ body {
 
 }
 
+.guessnumber {
+    background: #000915;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 282px;
+    padding-bottom: 282px;
+    flex-wrap: wrap;
+
+    &__info {
+        color: #FFF;
+        line-height: normal;
+        font-style: normal;
+        gap: 32px;
+        max-width: 584px;
+        display: flex;
+        flex-direction: column;
+
+        &_title {
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        &_text {
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        &_button {
+            border-radius: 30px;
+            background: #9C0332;
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border: none;
+            width: 234px;
+            min-height: 48px;
+            cursor: pointer;
+
+            &:hover {
+                background: #EB443F;
+            }
+        }
+    }
+
+    &__icon {
+        max-width: 485px;
+    }
+
+}
+
 
 @import 'tablet';
 @import 'mobile';
