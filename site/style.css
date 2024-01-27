@@ -158,6 +158,53 @@ body {
   max-width: 485px;
 }
 
+.guessnumber {
+  background: #000915;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 282px;
+  padding-bottom: 282px;
+  flex-wrap: wrap;
+}
+.guessnumber__info {
+  color: #FFF;
+  line-height: normal;
+  font-style: normal;
+  gap: 32px;
+  max-width: 584px;
+  display: flex;
+  flex-direction: column;
+}
+.guessnumber__info_title {
+  font-size: 48px;
+  font-weight: 700;
+}
+.guessnumber__info_text {
+  font-size: 18px;
+  font-weight: 300;
+}
+.guessnumber__info_button {
+  border-radius: 30px;
+  background: #9C0332;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  width: 234px;
+  min-height: 48px;
+  cursor: pointer;
+}
+.guessnumber__info_button:hover {
+  background: #EB443F;
+}
+.guessnumber__icon {
+  max-width: 485px;
+}
+
 @media (max-width: 1220px) {
   .center {
     padding-left: 32px;
@@ -171,6 +218,9 @@ body {
     gap: 32px;
   }
   .seasons {
+    gap: 32px;
+  }
+  .guessnumber {
     gap: 32px;
   }
 }
@@ -201,12 +251,26 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  .guessnumber {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+  }
+  .guessnumber__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (max-width: 560px) {
   .header__title {
     font-size: 42px;
   }
   .seasons__icon {
+    max-width: 345px;
+  }
+  .guessnumber__icon {
     max-width: 345px;
   }
 }
@@ -259,12 +323,35 @@ body {
   .seasons__icon {
     max-width: 344px;
   }
+  .guessnumber {
+    padding-top: 50px;
+    padding-bottom: 86px;
+    text-align: center;
+    gap: 64px;
+  }
+  .guessnumber__info {
+    align-items: center;
+  }
+  .guessnumber__info_title {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .guessnumber__info_text {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .guessnumber__icon {
+    max-width: 344px;
+  }
 }
 @media (max-width: 374px) {
   .games__item_game {
     width: 288px;
   }
   .seasons__icon {
+    max-width: 288px;
+  }
+  .guessnumber__icon {
     max-width: 288px;
   }
 }/*# sourceMappingURL=style.css.map */

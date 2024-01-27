@@ -84,28 +84,42 @@ getRange(1, 8);
 
 // Задание 08. Текущая дата
 
-let curDate = new Date();
+const curDate = new Date();
 console.log(curDate);
 
-// Задание 09.
+// Задание 09. Текущая дата + 73 дня (англ)
 
-let currentDate
+const currentDate = new Date();
+
+const futureDate = new Date(currentDate);
+futureDate.setDate(currentDate.getDate() + 73);
+
+console.log(futureDate);
+
+// Задание 10. 
 
 
+// создадим массив, в который занесем все дни недели на русском, отсчет с воскресенья - 0
 
-
-// Практика (все как обычно кроме месяца и дня недели, в них находятся индексы из русскоязычных массивов)
-
-// для начала создадим массив, в который занесем все дни недели на русском
-// помним, что отсчет в JS начинается с воскресенья - 0
 const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
 // создадим массив, где будем хранить названия месяцев на русском
-const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+const months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июлья", "Августа", "Сентября", "Октября", "Ноября", "Декабрьёя"];
 
 let myDate = new Date(); // здесь мы получаем текущую дату
-let fullDate = "Сегодня: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + ", " + days[myDate.getDay()];
+let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " г. - это " + days[myDate.getDay()];
 
-console.log(fullDate); // Сегодня: 1 Февраль 2023, Среда
+let hour = myDate.getHours(); // получаем час из нашей даты
+let minute = myDate.getMinutes(); // получаем минуты
+let second = myDate.getSeconds(); // получаем секунды
+
+console.log(fullDate);
+console.log("Время: " + hour + ":" + minute + ":" + second);
+
+// Время, которое будет выведено, также хранится в объекте Date. - ?
+
+
+
+
 
 
 

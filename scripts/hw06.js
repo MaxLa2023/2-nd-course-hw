@@ -113,7 +113,7 @@ console.log(ar06NoA);
 // Задание 07. Угадать есть ли число в массиве
 
 let ar07 = [9, 8, 7, 6, 5];
-let guessN = Nember(prompt('Угадайте число'));
+let guessN = Number(prompt('Угадайте число'));
 if (ar07.includes(guessN)) {
     console.log('Угадал');
 }
@@ -153,7 +153,6 @@ getSqareNum(ar11)
 
 
 // Задание 12. Преобразовать строки в длины слов
-
 
 function getWordLength(words) {
     return words.map(w => w.length);
